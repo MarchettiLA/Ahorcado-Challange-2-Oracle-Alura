@@ -1,5 +1,10 @@
 /* Mobile First */
 
+@font-face {
+    font-family: CaviarDreams;
+    src: url("/fonts/CaviarDreams.ttf") format("truetype")
+}
+
 body, header, html{
     width: 100vw;
 }
@@ -37,24 +42,24 @@ body, header, html{
 }
 
 .botones{
-    display: block;
     border-radius: 12px;
-   
-   
+    display: block;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .botones:first-child{
     background-color: gold;
+    border: 3px double black;
+    font-weight: bolder;
     height: 60px;
     margin: 20px auto;  
     min-width: 145px; 
-    width: 60%;
-    
-    
+    width: 60%;   
 }
 
 .botones:nth-child(2){
     background-color: rgb(65, 63, 63);
+    border: 3px double gold;
     color: white;
     height: 50px;
     margin: 20px auto;
