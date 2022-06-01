@@ -1,24 +1,28 @@
+/* Mobile First */
+
 body, header, html{
     width: 100vw;
 }
 
 .logo img{
-    margin: 10px;
+    margin: 20px;
     min-width: 200px;
-    width:40%;
+    width:200px;
 }
 
 .inicio{
     position: absolute;
-    top: 20%;
+    top: 25%;
     width: 99.5%;
     height: 400px;
     
 }
 
 .bienvenida{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 10px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 10px auto;
+    width: 75%;
+    
 }
 
 .bienvenida h3{
@@ -27,6 +31,7 @@ body, header, html{
 }
 
 .bienvenida p{
+    font-style: italic;
     font-size: 1em;
     margin: 10px 0 20% 10px;
 }
