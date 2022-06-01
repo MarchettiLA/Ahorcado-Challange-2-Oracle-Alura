@@ -1,0 +1,30 @@
+.contenedor{
+    align-items: center;
+    display: flex;  
+    height: 400px;   
+    position: absolute;
+    right: 0;
+    transform: scale(0.5) translateX(500px);
+
+    width: 400px;    
+}
+
+#img1{
+    
+    margin: 0 auto;
+    width: 80%;
+    opacity: 0;
+    position: relative;
+    left: 0;
+    top : 0;
+}
+
+.contenedor img{
+    
+    margin: 0 auto;
+    opacity: 0;
+    position: absolute;
+    width: 45%;
+    left:112px;
+    top: 195px
+}
