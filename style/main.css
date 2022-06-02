@@ -2,7 +2,9 @@
 
 body, header, html{
     width: 100vw;
+    background-color: #fbfbfb
 }
+
 
 .logo img{
     margin: 20px;
@@ -10,11 +12,22 @@ body, header, html{
     width:200px;
 }
 
+main{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 60% 30% 10% ;
+    grid-template-areas: "inicio"
+                         "calavera"
+                         
+}
+
+
 .inicio{
-    position: absolute;
-    top: 25%;
+    position: relative;
+    margin-top: 10%;
     width: 99.5%;
     height: 400px;
+    grid-area: inicio;
     
 }
 
@@ -44,7 +57,7 @@ body, header, html{
 }
 
 .botones:first-child{
-    background-color: gold;
+    background-color: orange;
     height: 60px;
     margin: 20px auto;  
     min-width: 145px; 
@@ -61,5 +74,19 @@ body, header, html{
     min-width: 145px;
     width: 50%;
 
+}
+.contenedor{
+    width: 100%;
+    height: 100%;
+    background-color: #fbfbfb
+}
+.calavera{
+   
+    width: 70%;
+    grid-area: calavera;
+}
+
+.contenedor h2{
+    text-align: center;
 }
 
