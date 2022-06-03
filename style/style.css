@@ -1,0 +1,111 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color:  #fafafa  ;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+header{
+    height: 15%;
+}
+
+header img{
+    width: 270px;
+    margin-bottom: 30px;
+    padding: 15px;
+   
+}
+
+main{
+    height: 70%;
+}
+
+
+#bienvenida{
+    margin: auto;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 20px;
+}
+
+#bienvenida h3{
+    font-size: 2em;
+    margin-left: 12%;
+}
+
+#bienvenida p{
+    font-style: italic;
+    font-size: 1em;
+    margin: 10px 10px;
+    margin: 0 0 20% 12% 
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    
+}
+
+.boton1{
+    
+    background-color: orange;
+    height: 60px;
+    margin: 20px auto;  
+    min-width: 145px; 
+    width: 60%;
+}
+
+.boton2{
+     display: flex;
+    background-color: rgb(65, 63, 63);
+    color: white;
+    height: 50px;
+    min-width: 145px;
+    width: 50%;
+    margin: 0 auto 20% auto;
+}
+
+.calavera{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.calavera img{
+    width: 100%
+}
+
+footer{
+    position: relative;
+    width: 100vw;
+    height: 15%;
+    z-index: 50;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100vw;
+}
+
+footer p{
+    align-self: center;
+    color: #FFFF;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 12px;
+}
+
+@media (max-width: 767px){
+
+main{
+    height: auto;
+}
+
+.boton2{
+    margin-bottom: 7%;
+}
+
+}

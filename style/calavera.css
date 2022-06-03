@@ -1,37 +1,64 @@
-.calavera{
-    display: block;
-    margin: auto;
-    justify-self: center;
-     width: 400px;
-    height: 400px;
-    transform: scale(0.5) translatey(-200px);
-    grid-area: calavera;
-}
-
-#img1{
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    opacity: 0;
+.hide{
     position: relative;
-    left: 0;
-    top : 1%;
-    display: block ;
-}
-
-.calavera img{
-    
-    margin: 0 auto;
+    right: -500px;
     opacity: 0;
+    transition: right 1s;
+}
+
+.visible{
+    right: 0;
+    opacity: 1;
+    transition: right 1s
+}
+
+.calavera{
+    position: relative;
+}
+span{
     position: absolute;
-    width: 45%;
-    left:112px;
-    top: 195px
+    top: -10%;
+    height: 50px;
+    border-radius: 12px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+    background: rgb(207,207,207);
+background: linear-gradient(180deg, rgb(165, 165, 165) 0%, rgba(198,198,198,1) 80%, #d6d6d6 100%);
+}
+
+span::before{
+    position: absolute;
+   font-size: 35px;
+    content: "▼";
+    color: #d6d6d6;
+    left: 20%;
+    top: 35px;
+    width: 50px;
+
+}
+
+.hideDialog{
+    transition: all 0.5s;
+    transform: scaleY(0);
+    opacity: 0;
+}
+
+.visibleDialog{
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+@media(min-width:768px){
+    span{
+        top: 3%
+    }
 }
 
 
-@media (max-width: 386px){
-    body{
-        overflow-x: auto;
+@media(min-width:768px) and (max-width:950px){
+    span{
+        top: 10%
     }
 }
