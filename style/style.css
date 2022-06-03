@@ -5,6 +5,13 @@ body{
     box-sizing: border-box;
     overflow-x: hidden;
 }
+
+main{
+    display: block;
+    width: 100%;
+    margin: 0 10%
+}
+
 header{
     height: 15%;
 }
@@ -36,7 +43,7 @@ main{
     font-style: italic;
     font-size: 1em;
     margin: 10px 10px;
-    margin: 0 0 20% 12% 
+    margin: 0 0 15% 12% 
 }
 
 button{
@@ -73,7 +80,8 @@ button{
 }
 
 .calavera img{
-    width: 100%
+    width: 100%;
+    max-width: 600px
 }
 
 footer{

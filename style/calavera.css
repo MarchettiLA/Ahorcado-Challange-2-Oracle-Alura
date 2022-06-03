@@ -13,10 +13,11 @@
 
 .calavera{
     position: relative;
+    
 }
 span{
     position: absolute;
-    top: -10%;
+    top: -11%;
     height: 50px;
     border-radius: 12px;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -50,15 +51,19 @@ span::before{
     opacity: 1;
 }
 
-@media(min-width:768px){
-    span{
-        top: 3%
-    }
-}
+
 
 
 @media(min-width:768px) and (max-width:950px){
     span{
+        top: 20%
+    }
+}
+
+@media(min-width:950px){
+    span{
         top: 10%
     }
 }
+
+
