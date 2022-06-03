@@ -1,0 +1,12 @@
+.playing{
+    width: 80vw;
+    margin: auto;
+}
+
+.word-lines{
+    background-color: black;
+    height: 10px;
+    margin: 0 auto 10% auto;
+    width: 20px;
+    align-self: flex-end;
+}

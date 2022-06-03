@@ -34,6 +34,26 @@ let visible = false
                 }
             }
         })
+
+        // Funciones botones
+
+       const btnPrinc = document.querySelector(".boton1");
+       const main = document.querySelector("main")
+       const removeMain = () => {
+        main.innerHTML = "";
+       }
+       
+       const iniciarJuego = () => {
+            main.style.transition = "all 1s"
+            main.style.opacity = 0
+            setTimeout(removeMain, 1000);
+            setTimeout("crearTablero(palabra)",2000)
+            setTimeout(main.style.opacity = 1, 3000)
+       }
+       
+       btnPrinc.onclick = iniciarJuego;
+
+
     
        
       

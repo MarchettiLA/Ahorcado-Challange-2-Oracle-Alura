@@ -8,7 +8,7 @@ body{
 
 main{
     display: block;
-    width: 100%;
+    width: 100vw;
     margin: 0 10%
 }
 
@@ -24,7 +24,9 @@ header img{
 }
 
 main{
+    min-height: 70%;
     height: 70%;
+    width:100vw;
 }
 
 
@@ -55,13 +57,14 @@ button{
 }
 
 .boton1{
-    
+    position: relative;
     background-color: orange;
     height: 60px;
     margin: 20px auto;  
     min-width: 145px; 
     width: 60%;
 }
+
 
 .boton2{
      display: flex;
@@ -81,7 +84,7 @@ button{
 
 .calavera img{
     width: 100%;
-    max-width: 600px
+    max-width: 600px;
 }
 
 footer{
@@ -110,10 +113,6 @@ footer p{
 
 main{
     height: auto;
-}
-
-.boton2{
-    margin-bottom: 7%;
 }
 
 }

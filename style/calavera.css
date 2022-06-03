@@ -16,17 +16,19 @@
     
 }
 span{
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    top: -11%;
+    top: -15%;
     height: 50px;
     border-radius: 12px;
+    font-size: 13px;
     font-family: 'Montserrat Alternates', sans-serif;
     color: black;
     padding: 10px;
     text-align: center;
     width: 80%;
-    background: rgb(207,207,207);
-background: linear-gradient(180deg, rgb(165, 165, 165) 0%, rgba(198,198,198,1) 80%, #d6d6d6 100%);
+    background: linear-gradient(180deg, rgb(165, 165, 165) 0%, rgba(198,198,198,1) 80%, #d6d6d6 100%);
 }
 
 span::before{
@@ -56,14 +58,72 @@ span::before{
 
 @media(min-width:768px) and (max-width:950px){
     span{
-        top: 20%
+        top: 20%;
+        font-size: 16px;
+        height: 60px;
     }
+
+    span::before{
+       
+        
+        left: 20%;
+        top: 45px;
+        width: 50px;
+
+}
 }
 
 @media(min-width:950px){
     span{
-        top: 10%
+        top: 12%;
+        font-size: 15px;
+        height: 60px;
     }
+
+    span::before{
+
+        left: 20%;
+        top: 45px;
+        width: 50px;
+
+}
 }
 
+@media (max-height: 680px){
+
+    span{
+        top: -20%;
+        font-size: 15px;
+        height: 60px;
+    }
+
+    span::before{
+
+        left: 20%;
+        top: 44px;
+        width: 50px;
+
+
+   
+}
+
+}
+
+@media (max-height: 680px) and (orientation: landscape){
+
+    span{
+        top: -7%;
+        font-size: 15px;
+        height: 60px;
+    }
+
+    span::before{
+
+        left: 20%;
+        top: 44px;
+        width: 50px;
+
+}
+
+}
 
