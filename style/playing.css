@@ -1,12 +1,50 @@
-.playing{
-    width: 80vw;
-    margin: auto;
+.flex-section{
+   max-width: 1050px;
+}
+
+.contenedor-horca{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.horca{
+    align-self: center;
+    width: 50%;
+}
+
+
+.word {
+    display: flex;
+    align-items: flex-end;
+    padding: 10%;
+    justify-content: center;
+   
 }
 
 .word-lines{
+    position: relative;
     background-color: black;
     height: 10px;
-    margin: 0 auto 10% auto;
-    width: 20px;
+    margin: 100px auto 100px auto;
+    width: 10%;
     align-self: flex-end;
+}
+
+.chars-word{
+    opacity: 0;
+    font-size: 24px;
+    position: absolute;
+    top: -500%;
+    transition: all 0.5s;
+    text-align: center;
+    width: 100%;
+}
+
+
+@media (min-width: 768px){
+
+    .word-lines{
+        position: relative;
+    }
 }

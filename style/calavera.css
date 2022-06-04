@@ -5,17 +5,56 @@
     transition: right 1s;
 }
 
+.hide-jugando{
+    width: 30%;
+    position: absolute;
+    right: -300px;
+    opacity: 0;
+    transition: all 2s;
+}
+
 .visible{
     right: 0;
     opacity: 1;
     transition: right 1s
 }
 
+.visible-jugando{
+    position: absolute;
+    right: 0;
+    opacity: 1;
+    transition: all 2s;
+    width: 30%;
+    bottom: 500px;
+}
+
 .calavera{
     position: relative;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center ;  
 }
-span{
+
+.calavera-jugando{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center ;  
+}
+
+
+.calavera img{
+    width: 100%;
+    max-width: 600px;
+}
+
+.calavera-jugando img{
+    width: 100%;
+    max-width: 600px;
+}
+
+
+#dialog-skull{
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -31,7 +70,7 @@ span{
     background: linear-gradient(180deg, rgb(165, 165, 165) 0%, rgba(198,198,198,1) 80%, #d6d6d6 100%);
 }
 
-span::before{
+#dialog-skull::before{
     position: absolute;
    font-size: 35px;
     content: "▼";
@@ -57,13 +96,13 @@ span::before{
 
 
 @media(min-width:768px) and (max-width:950px){
-    span{
+    #dialog-skull{
         top: 20%;
         font-size: 16px;
         height: 60px;
     }
 
-    span::before{
+    #dialog-skull::before{
        
         
         left: 20%;
@@ -74,13 +113,13 @@ span::before{
 }
 
 @media(min-width:950px){
-    span{
+    #dialog-skull{
         top: 12%;
         font-size: 15px;
         height: 60px;
     }
 
-    span::before{
+    #dialog-skull::before{
 
         left: 20%;
         top: 45px;
@@ -91,13 +130,13 @@ span::before{
 
 @media (max-height: 680px){
 
-    span{
+    #dialog-skull{
         top: -20%;
         font-size: 15px;
         height: 60px;
     }
 
-    span::before{
+    #dialog-skull::before{
 
         left: 20%;
         top: 44px;
@@ -111,13 +150,13 @@ span::before{
 
 @media (max-height: 680px) and (orientation: landscape){
 
-    span{
+    #dialog-skull{
         top: -7%;
         font-size: 15px;
         height: 60px;
     }
 
-    span::before{
+    #dialog-skull::before{
 
         left: 20%;
         top: 44px;

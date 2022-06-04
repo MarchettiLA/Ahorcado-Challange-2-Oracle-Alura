@@ -1,11 +1,29 @@
-const palabras = ["remate","chupar","suelo","harina","beso","humo","popular","parar", "politica", "cucaracha", "fango"];
 
-const crearTablero = (palabra) => {
-    for (let letter of palabra){
-        div = document.createElement("div")
-        div.classList.add("word-lines")
-        main.appendChild(div);
-        main.classList.add("playing")
-    }
+
+// FUNCION PARA CREAR TABLERO y HORCA
+
+
+//FUNCION QUE ENGLOBA TODO !!!!!!!!!!!!!!!!!!!!!!!!
+
+const comenzarJuego = () =>{
+    jugando = true;
+    crearHorca();
+    randomWord();
+    crearTablero(palabraElegida);
+    wordSystem();
+    
 }
-palabra = "camisa"
+
+
+
+// FUNCION TODO EL SISTEMA DE LAS PALABRAS Y LOGICA DE GANAR - PERDER
+
+
+const wordSystem = () =>{
+    fillLines();
+    setInterval(winLogic, 100);
+}
+
+
+
+
