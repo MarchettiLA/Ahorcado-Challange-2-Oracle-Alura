@@ -59,7 +59,6 @@
     justify-content: center;
     position: absolute;
     top: -15%;
-    height: 50px;
     border-radius: 12px;
     font-size: 13px;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -96,31 +95,17 @@
 
 
 @media(min-width:768px) and (max-width:950px){
-    #dialog-skull{
-        top: 20%;
-        font-size: 16px;
-        height: 60px;
-    }
-
-    #dialog-skull::before{
-       
-        
-        left: 20%;
-        top: 45px;
-        width: 50px;
-
-}
+   
 }
 
 @media(min-width:950px){
     #dialog-skull{
-        top: 12%;
+        top: -5%;
         font-size: 15px;
         height: 60px;
     }
 
     #dialog-skull::before{
-
         left: 20%;
         top: 45px;
         width: 50px;
