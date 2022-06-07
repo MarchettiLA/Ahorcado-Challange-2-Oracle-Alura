@@ -4,15 +4,19 @@ const palabras = ["remate","chupar","suelo","harina","beso","humo","popular","pa
 let palabraElegida = ""
 const sectionFlex = document.createElement("section");
 sectionFlex.classList.add("row","flex-section");
-
+const contenedorCalaveraJugando = document.createElement("div")
 
 //FUNCION PARA CREAR LOS GUIONES Y LAS LETRAS
 
 const crearTablero = (palabra) => {
     main.appendChild(sectionFlex)
     const contenedorWord = document.createElement("div");
-    contenedorWord.classList.add("word", "col-md-6");
+    contenedorWord.classList.add("word", "col-md-4");
+    
     sectionFlex.appendChild(contenedorWord);
+    contenedorCalaveraJugando.classList.add("col-md-4", "calavera");
+    sectionFlex.appendChild(contenedorCalaveraJugando);
+    
     for (let letter of palabra){        
         const wordLines = document.createElement("div");
         wordLines.classList.add("word-lines");
@@ -23,6 +27,11 @@ const crearTablero = (palabra) => {
         wordLines.appendChild(chars)
         main.classList.add("playing");
     }
+    
+    contenedorCalaveraJugando.appendChild(calavera);
+    contenedorCalaveraJugando.appendChild(dialog);
+
+   
     return palabra
 }
 
@@ -30,7 +39,7 @@ const crearTablero = (palabra) => {
 
 const crearHorca = () => {
         const horcaContenedor = document.createElement("div");
-        horcaContenedor.classList.add("contenedor-horca", "col-md-6");
+        horcaContenedor.classList.add("contenedor-horca", "col-md-4");
         sectionFlex.appendChild(horcaContenedor);
         const horcaImg = document.createElement("img")
         horcaImg.classList.add("horca")

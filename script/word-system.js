@@ -30,24 +30,24 @@ const fillLines = () =>{
 let jugando = false;
 
 
-const calaveraImg = document.createElement("img");
-calaveraImg.src = "img/calavera.gif";
-calaveraImg.classList.add("hide-jugando")
+
+
+const dialogSkullPlaying = document.querySelector("span")
+const youLose = document.createElement("span");
+youLose.classList.add("you-lose");
+youLose.innerHTML = "Has perdido...Contendiente."
 
 
 const winLogic = () =>{
     if (intentos == 6 && gameReady == true){
         gameReady = false;
-        main.appendChild(calaveraImg)
-        setTimeout(moverCalavera,1000);
         alert("you lose")
+        main.appendChild(youLose)
         
     }
 
     if(visibleLetters == char.length && gameReady == true && jugando == true){
         gameReady = false;
-        main.appendChild(calaveraImg)
-        setTimeout(moverCalavera,1000);
         alert("you win");
         
     }

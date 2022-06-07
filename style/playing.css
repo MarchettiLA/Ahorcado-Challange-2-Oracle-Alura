@@ -1,5 +1,6 @@
 .flex-section{
-   max-width: 1050px;
+   max-width: 1350px;
+   
 }
 
 .contenedor-horca{
@@ -14,11 +15,12 @@
 }
 
 
-.word {
+.word{
     display: flex;
     align-items: flex-end;
-    padding: 10%;
+    padding: 5%;
     justify-content: center;
+    
    
 }
 
@@ -41,6 +43,16 @@
     width: 100%;
 }
 
+
+.you-lose{
+    position: relative;    
+    font-size: 1em;
+    color:black;
+    bottom: 40px;
+    width: 100%;
+    height: 25px;
+    font-family: "Montserrat", sans-serif;
+}
 
 @media (min-width: 768px){
 
