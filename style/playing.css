@@ -8,11 +8,13 @@
   justify-content: center;
   align-items: center;
   position: relative;
+ 
 }
 
 .horca{
     align-self: center;
     width: 50%;
+    min-width: 156px;
 }
 
 
