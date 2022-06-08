@@ -36,9 +36,9 @@ const crearTablero = (palabra) => {
 }
 
 //FUNCION PARA CREAR LA HORCA
+const horcaContenedor = document.createElement("div");
 
 const crearHorca = () => {
-        const horcaContenedor = document.createElement("div");
         horcaContenedor.classList.add("contenedor-horca", "col-md-4");
         sectionFlex.appendChild(horcaContenedor);
         const horcaImg = document.createElement("img")
@@ -46,6 +46,12 @@ const crearHorca = () => {
         horcaImg.src = "img/horca.png";
         horcaContenedor.appendChild(horcaImg)
 }
+const hanged = [];
+
+
+
+
+
 
 //FUNCION PALABRA AL AZAR
 
