@@ -19,6 +19,7 @@ const fillLines = () =>{
                 visibleLetters += 1;        
             } else if (!palabraElegida.includes(event.key)) {
                 errores += 1;
+                dibujarAhorcado();
                 break
             }
 
@@ -26,16 +27,26 @@ const fillLines = () =>{
 })
 }
 
+let indice = 1;
 const dibujarAhorcado = () => {
-    for (let i=1; i<6;i++){
-        if(errores == i){
-            hanged[i] = document.createElement("img");
-            hanged[i].classList.add(`hanged-${i}`)
-            horcaContenedor.appendChild(hanged[i])
+    
+    while (indice <= 6){
+            hanged[indice] = document.createElement("img");
+            hanged[indice].src = `img/hanged${indice}.png`;
+            hanged[indice].classList.add(`hanged-${indice}`, "hanged")
+            horcaContenedor.appendChild(hanged[indice])
+            indice++;
+            if(indice == 7){
+                deadHanged = document.createElement("img");
+                deadHanged.src = `img/hanged-dead.png`;
+                deadHanged.classList.add(`hanged-dead`, "hanged")
+                horcaContenedor.appendChild(deadHanged)
+            }
+            break
+            
         }
       
     }
-}
 
 
 
@@ -59,7 +70,6 @@ const winLogic = () =>{
     if (errores == 6 && gameReady == true){
         gameReady = false;
         jugando = false;
-        alert("you lose");
         main.appendChild(youLose);
         showRemainingLetters();
         setTimeout('youLose.style.color = "red"', 500)
@@ -70,7 +80,6 @@ const winLogic = () =>{
     if(visibleLetters == char.length && gameReady == true && jugando == true){
         gameReady = false;
         jugando = false
-        alert("you win");
         main.appendChild(youWin);
         showRemainingLetters();
         setTimeout('youWin.style.color = "green"', 500)

@@ -7,6 +7,7 @@
  display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .horca{
@@ -55,6 +56,43 @@
     font-family: "Montserrat", sans-serif;
     transition: all 1s;
 }
+
+.hanged{
+    height: 20%;
+    position: absolute;
+}
+
+.hanged-1, .hanged-dead{
+    right: 30%;
+    top: 20%;
+}
+
+.hanged-2{
+    height: 30%;
+    left: 60%;
+    top:38%
+    
+}
+
+.hanged-3{
+    left: 48%;
+}
+
+.hanged-4{
+    right: 26%;
+}
+
+.hanged-5{
+    bottom: 15%;
+    left: 51%;
+}
+
+.hanged-6{
+    right: 28%;
+    bottom: 15%;
+}
+
+
 
 @media (min-width: 768px){
 
