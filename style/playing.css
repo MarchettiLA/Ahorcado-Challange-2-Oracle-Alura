@@ -94,6 +94,13 @@
     bottom: 15%;
 }
 
+.discarted-letters-div{
+    font-size: 2em;
+    font-family: "Monteserrat", sans-serif;
+    text-align: center;
+    position: relative;
+    margin: 80px;
+}
 
 
 @media (min-width: 768px){

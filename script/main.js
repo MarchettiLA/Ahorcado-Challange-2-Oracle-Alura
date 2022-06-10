@@ -16,6 +16,7 @@ const moverCalavera = () => {
 
 // FUNCION QUE MUESTRA O ESCONDE EL DIALOGO ON-CLICK
 const dialogosCalavera = ["Bienvenido... Contendiente.", "Elije una opción... No tengo todo el día.", "Ya deja de molestarme!!!", "..."];
+const dialogosCalaveraJugando = ["JAJAJA te has equivocado!", "Parece que no duraras mucho...." ]
 let dialogIndex = 0;
 let visible = false
 

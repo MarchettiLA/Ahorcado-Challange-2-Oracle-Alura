@@ -1,6 +1,8 @@
 // DICCIONARIO DE PALABRAS
 
-const palabras = ["remate","chupar","suelo","harina","beso","humo","popular","parar", "politica", "cucaracha", "fango"];
+const palabras = ["remate","chupar","suelo","harina","beso","humo","popular","parar", "politica", "cucaracha", "fango", "Urgente", "Agrupar","Renacuajo","Guardabarros","Encuesta","Albino","Hurgar","Bandeja","Grupo","Enero"];
+
+
 let palabraElegida = ""
 const sectionFlex = document.createElement("section");
 sectionFlex.classList.add("row","flex-section");
@@ -30,6 +32,7 @@ const crearTablero = (palabra) => {
     
     contenedorCalaveraJugando.appendChild(calavera);
     contenedorCalaveraJugando.appendChild(dialog);
+   
 
    
     return palabra

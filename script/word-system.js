@@ -9,8 +9,19 @@ let visibleLetters = 0
 // FUNCION QUE SE OCUPA DE ESCUCHAR EL TECLADO Y HACER VISIBLES LAS LETRAS EN PANTALLA
 
 let errores = 0;
+const discartedLettersContainer = document.createElement("div");
+discartedLettersContainer.classList.add("discarted-letters-div")
+const discartedLettersSpan = document.createElement("span");
+discartedLettersSpan.classList.add("discarted-letters");
+
+
+
+
+
+const discartedLetters = new Set();
 
 const fillLines = () =>{
+    main.appendChild(discartedLettersContainer)
     window.addEventListener("keydown", (event) => {
         gameReady = true;
         for(let i=0; i < palabraElegida.length; i++){
@@ -19,6 +30,14 @@ const fillLines = () =>{
                 visibleLetters += 1;        
             } else if (!palabraElegida.includes(event.key)) {
                 errores += 1;
+                discartedLetters.add(event.key.toUpperCase());
+                console.log(discartedLetters)
+                discartedLettersContainer.appendChild(discartedLettersSpan)
+                discartedLettersSpan.innerHTML = discartedLetters[event.key]
+                dialog.classList.add("visibleDialog");
+                dialog.innerHTML = dialogosCalaveraJugando[errores - 1];
+                discartedLettersSpan.innerHTML = Array.from(discartedLetters);
+                discartedLettersSpan.textContent.toUpperCase();
                 dibujarAhorcado();
                 break
             }
