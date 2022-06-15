@@ -21,10 +21,9 @@
 .word{
     display: flex;
     align-items: flex-end;
-    padding: 5%;
+    padding: 5%;    
     justify-content: center;
-    
-   
+    flex-grow: 2;   
 }
 
 .word-lines{
@@ -32,7 +31,9 @@
     background-color: black;
     height: 10px;
     margin: 100px auto 100px auto;
-    width: 10%;
+    min-width: 5%;
+    margin-left: 5px;
+    
     align-self: flex-end;
 }
 
@@ -104,7 +105,7 @@
 }
 
 .boton-playing{
-    position: absolute;
+    position: relative;
     background-color: orange;
     height: 60px;
     margin: 20px auto;  
@@ -119,5 +120,9 @@
 
     .word-lines{
         position: relative;
+    }
+
+    .boton-playing{
+        position: absolute;
     }
 }

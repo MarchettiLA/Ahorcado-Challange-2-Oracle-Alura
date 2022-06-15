@@ -29,6 +29,7 @@ const fillLines = () =>{
                 char[i].style.opacity = 1;     
                 visibleLetters += 1;        
             } else if (!palabraElegida.includes(event.key)) {
+                if(event.key.length == 1 && !discartedLetters.has(event.key.toUpperCase())){                
                 errores += 1;
                 discartedLetters.add(event.key.toUpperCase());
                 console.log(discartedLetters)
@@ -40,6 +41,9 @@ const fillLines = () =>{
                 discartedLettersSpan.textContent.toUpperCase();
                 dibujarAhorcado();
                 break
+            } else {
+                console.log("LETRA YA INGRESADA O INVALIDA")
+            }
             }
 
         }
