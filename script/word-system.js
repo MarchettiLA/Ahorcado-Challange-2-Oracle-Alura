@@ -71,7 +71,7 @@ const dibujarAhorcado = () => {
 
 // FUNCION PARA LA LOGICA AL GANAR
 
-let jugando = false;
+
 
 
 
@@ -82,7 +82,11 @@ youLose.classList.add("result");
 youLose.innerHTML = "Has perdido...Contendiente."
 const youWin = document.createElement("span")
 youWin.classList.add("result");
-youWin.innerHTML = "Felicitaciones...Contendiente, te has salvado..."
+youWin.innerHTML = "Felicitaciones...Contendiente, te has salvado...";
+const btnPrincJugando = document.createElement("button")
+btnPrincJugando.classList.add("boton-playing")
+btnPrincJugando.innerHTML = "Nuevo Juego";
+
 
 
 const winLogic = () =>{
@@ -91,6 +95,8 @@ const winLogic = () =>{
         jugando = false;
         main.appendChild(youLose);
         showRemainingLetters();
+        main.appendChild(btnPrincJugando)
+        setTimeout("btnPrincJugando.style.opacity = 1", 500);
         setTimeout('youLose.style.color = "red"', 500)
         
         
@@ -101,7 +107,10 @@ const winLogic = () =>{
         jugando = false
         main.appendChild(youWin);
         showRemainingLetters();
+        main.appendChild(btnPrincJugando)
+        setTimeout("btnPrincJugando.style.opacity = 1", 500);
         setTimeout('youWin.style.color = "green"', 500)
+       
         
     }
 }
@@ -111,3 +120,7 @@ const showRemainingLetters = () => {
         element.style.opacity = 1
     }
 }
+
+btnPrincJugando.addEventListener("click", ()=>{
+    location.reload()
+})

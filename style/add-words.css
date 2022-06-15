@@ -1,0 +1,23 @@
+.inputWord-container{
+    position: absolute;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputWord-container input{
+    width: 100%;
+    border-radius: 14px;
+    padding: 10px;
+    
+}
+
+.inputWord-container button{
+    background-color: orange;
+    height: 60px;
+    margin-top: 20px; 
+    min-width: 145px; 
+    width: 40%;
+    transition: all 2s;
+}
